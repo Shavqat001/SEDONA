@@ -11,7 +11,7 @@
 <body>
   <header>
     <nav>
-      <a>
+      <a href="./index.html">
         <img src="https://via.placeholder.com/150x100" width="138" height="70" alt="Логотип горы Седора">
       </a>
       <ul>
@@ -24,7 +24,8 @@
   </header>
 
   <main>
-    <section>
+    <form action="https://echo.htmlacademy.ru/">
+      <img src="https://via.placeholder.com/1200x217" alt="Заказ Гостиницы">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <input type="checkbox" checked>
@@ -40,10 +41,84 @@
 
       <fieldset>
         <legend>стоимость в сутки,₽:</legend>
-        
+        <input type="range" min="0" max="3000">
+        <button type="submit">показать</button>
       </fieldset>
+    </form>
+
+    <section>
+      <ul>
+        <li>Найдено: 3</li>
+        <li>Сортировка:</li>
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По рейтингу</li>
+      </ul>
+      <ul>
+        <li>
+          <article>
+            <h2>Amara Resort & Spa</h2>
+            <img src="https://via.placeholder.com/135x90" alt="">
+            <p>гостиница</p>
+            <button>подробнее</button>
+            <p>от 4000 ₽</p>
+            <button>забронировать</button>
+            <p>Рейтинг: 8,5</p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <h2>Desert Quail Inn</h2>
+            <img src="https://via.placeholder.com/135x90" alt="">
+            <p>Мотель</p>
+            <button>подробнее</button>
+            <p>От 3000 ₽</p>
+            <button>забронировать</button>
+            <p>Рейтинг: 8,9</p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <h2>Villas at Poco Diablo</h2>
+            <img src="https://via.placeholder.com/135x90" alt="">
+            <p>Апартаменты</p>
+            <button>подробнее</button>
+            <p>От 2000 ₽</p>
+            <button>забронировать</button>
+            <p>Рейтинг: 9,2</p>
+          </article>
+        </li>
+      </ul>
     </section>
   </main>
+
+  <footer>
+    <address>
+      <ul>
+        <li>
+          <a href="">
+            #visitSEDONA
+          </a>
+        </li>
+        <li>
+          <a href="tel:+78005558628">
+            +7 800 555-86-28
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>twitter</li>
+        <li>facebook</li>
+        <li>youtube</li>
+      </ul>
+      <p>Website by</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="https://via.placeholder.com/115x33" alt="html academy logo">
+      </a>
+    </address>
+  </footer>
 </body>
 
 </html>
