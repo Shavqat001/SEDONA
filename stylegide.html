@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стайлгайд</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>найти гостиницу</h1>
+        <form action="https://echo.htmlacademy.ru/">
+            <img src="https://via.placeholder.com/1200x217" alt="Заказ Гостиницы">
+            <fieldset>
+                <legend>Инфраструктура:</legend>
+                <input type="checkbox" checked>
+                <label>бассейн</label><br>
+                <input type="checkbox">
+                <label>парковка</label><br>
+                <input type="checkbox">
+                <label>wi-fi</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>тип жилья:</legend>
+                <input type="checkbox" checked>
+                <label>гостиница</label><br>
+                <input type="checkbox" checked>
+                <label>мотель</label><br>
+                <input type="checkbox" checked>
+                <label>апартаменты</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>стоимость в сутки,₽:</legend>
+                <input type="range" min="0" max="3000">
+                <button type="submit">показать</button>
+            </fieldset>
+
+            <form>
+                <input type="checkbox">
+                <label>покой</label><br>
+                <input type="checkbox">
+                <label>наведение</label><br>
+                <input type="checkbox" disabled>
+                <label>заблокирован</label>
+            </form>
+
+            <form>
+                <input type="checkbox" checked>
+                <label>покой</label><br>
+                <input type="checkbox" checked>
+                <label>наведение</label><br>
+                <input type="checkbox" checked disabled>
+                <label>заблокирован</label>
+            </form>
+
+            <fieldset>
+                <legend>Наведение <button>показать</button></legend>
+                <input type="radio" id="radio">
+                <label for="radio">покой</label><br>
+                <input type="radio" id="radio2">
+                <label for="radio2">наведение</label>
+            </fieldset>
+        </form>
+
+        <dl>
+            <dt>Информация</dt>
+            <dd>покой</dd>
+            <dt>Информация</dt>
+            <dd>наведение</dd>
+            <dt>Информация</dt>
+            <dd>нажатие</dd>
+            <dt>Информация</dt>
+            <dd>выбранный</dd>
+        </dl>
+
+        <ul>
+            <li>
+                сортировка:
+                <a href="">по цене</a>
+                <a href="">по типу</a>
+                <a href="">по рейтингу</a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href="">покой</a>
+            </li>
+            <li>
+                сортировка:
+                <a href="">по цене</a>
+                <a href="">по типу</a>
+                <a href="">по рейтингу</a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href="">наведение</a>
+            </li>
+            <li>
+                сортировка:
+                <a href="">по цене</a>
+                <a href="">по типу</a>
+                <a href="">по рейтингу</a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href="">нажатие</a>
+            </li>
+            <li>
+                сортировка:
+                <a href="">по цене</a>
+                <a href="">по типу</a>
+                <a href="">по рейтингу</a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href="">выбранный</a>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
