@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -24,9 +24,11 @@
   </header>
 
   <main>
-    <h1>найти гостиницу</h1>
-    <form action="https://echo.htmlacademy.ru/">
-      <img src="https://via.placeholder.com/1200x217" alt="Заказ Гостиницы">
+    <section>
+      <h1>найти гостиницу</h1>
+    </section>
+
+    <form action="https://echo.htmlacademy.ru/" method="post">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <input type="checkbox" checked>
@@ -36,6 +38,7 @@
         <input type="checkbox">
         <label>wi-fi</label>
       </fieldset>
+
       <fieldset>
         <legend>тип жилья:</legend>
         <input type="checkbox" checked>
@@ -47,16 +50,20 @@
       </fieldset>
 
       <fieldset>
-        <legend>стоимость в сутки,₽:</legend>
-        <input type="range" min="0" max="3000">
-        <button type="submit">показать</button>
+        <legend>Стоимость в сутки, ₽:</legend>
+        <p>
+          <label>От <input type="text" value="0"></label>
+          <label>До <input type="text" value="3000"></label>
+        </p>
+        <input type="range" id="priceslider" name="priceslider" min="0" max="15000" step="1">
       </fieldset>
     </form>
 
     <section>
+      <h2>Товары</h2>
+      <p>Сортировка:</p>
+      <p>Найдено: 3</p>
       <ul>
-        <li>Найдено: 3</li>
-        <li>Сортировка:</li>
         <li><a href="">По цене</a></li>
         <li><a href="">По типу</a></li>
         <li><a href="">По рейтингу</a></li>
@@ -123,9 +130,7 @@
     <address>
       <ul>
         <li>
-          <a href="">
-            #visitSEDONA
-          </a>
+          <a href="">#visitSEDONA</a>
         </li>
         <li>
           <a href="tel:+78005558628">
@@ -134,9 +139,9 @@
         </li>
       </ul>
       <ul>
-        <li>twitter</li>
-        <li>facebook</li>
-        <li>youtube</li>
+        <li><a href="">twitter</a></li>
+        <li><a href="">facebook</a></li>
+        <li><a href="">youtube</a></li>
       </ul>
       <p>Website by</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
