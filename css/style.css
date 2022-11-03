@@ -1,8 +1,10 @@
+/* global */
+
+@import url('../css/global/font.css');
+@import url('../css/global/normalize.css');
+@import url('../css/global/variables.css');
+@import url('../css/global/global.css');
+
 /* blocks */
 
 @import url('../css/blocks/advantages.css');
-
-/* global */
-
-@import url('../css/global/normalize.css');
-@import url('../css/global/variables.css');
