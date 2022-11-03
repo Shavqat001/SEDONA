@@ -1,0 +1,20 @@
+:root {
+  --skyblue-dark: #5496BD;
+  --skyblue-light: #669EC0;
+  --skyblue-lighter: #81B3D2;
+
+  --chocolate-lighter: #766357;
+  --chocolate-light: #604E43;
+  --chocolate-dark: #503E33;
+
+  --gray: #ABABAB;
+  --gray-light: #BDBBBC;
+  --gray-lighter: #CACACA;
+  --gray-white: #F2F2F2;
+
+  --font-color-dark: #333333;
+  --font-color-light: #666666;
+  --font-color-lighter: #888888;
+
+  --basic-white: #FF0000;
+}
