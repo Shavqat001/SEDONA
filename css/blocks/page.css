@@ -1,5 +1,8 @@
-.page-body {
+.page {
   padding-left: 40px;
   padding-right: 40px;
-  background: var(--font-color-lighter);
+}
+.page__body {
+  background: var(--basic-white);
+  box-shadow: 0 0 10px var(--font-color-lighter);
 }

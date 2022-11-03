@@ -1,0 +1,18 @@
+.page-footer__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.page-footer__items:not(:last-child) {
+    margin-right: 6px;
+}
+
+.page-footer__logos {
+    padding: 17px;
+    min-width: 46px;
+    min-height: 48px;
+    background: var(--skyblue-dark);
+    color: var(--basic-white);
+}

@@ -1,0 +1,26 @@
+.page-main__title {
+    text-align: center;
+}
+
+.page-main__title b {
+    display: block;
+    font-family: Impact;
+    font-weight: 700;
+    color: var(--skyblue-dark);
+    text-transform: uppercase;
+}
+
+.page-main__description {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.page-main__cause-description {
+    text-align: center;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: var(--font-color-dark);
+}

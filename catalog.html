@@ -5,27 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Catalog</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="./index.html">
-        <img src="https://via.placeholder.com/150x100" width="138" height="70" alt="Логотип горы Седора">
+  <header class="page-header">
+    <nav class="page-header__navigation">
+
+      <!-- <ul class="navigation__list"> -->
+      <a class="navigation__links" href="#">Информация</a>
+      <a class="navigation__links" href="#">Фото и видео</a>
+      <a class="navigation__main-logo" href="./index.html">
+        <img class="page-header__logo" src="https://via.placeholder.com/150x100" width="138" height="70"
+          alt="Логотип горы Седора">
       </a>
-      <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="#">гостиницы</a></li>
-      </ul>
+      <a class="navigation__links" href="#">Карта штата</a>
+      <a class="navigation__links" href="#">гостиницы</a>
+      <!-- </ul> -->
     </nav>
   </header>
 
   <main>
     <section>
-      <h1>найти гостиницу</h1>
+      <h1 class="visually-hidden">найти гостиницу</h1>
     </section>
 
     <form action="https://echo.htmlacademy.ru/" method="post">

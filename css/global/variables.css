@@ -1,4 +1,7 @@
 :root {
+  --basic-white: #fff;
+  --almost-white: #EEEEEE;
+
   --skyblue-dark: #5496BD;
   --skyblue-light: #669EC0;
   --skyblue-lighter: #81B3D2;
@@ -16,5 +19,5 @@
   --font-color-light: #666666;
   --font-color-lighter: #888888;
 
-  --basic-white: #FF0000;
+  --basic-red: #FF0000;
 }

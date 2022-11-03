@@ -1,10 +1,14 @@
 /* global */
 
-@import url('../css/global/font.css');
-@import url('../css/global/normalize.css');
-@import url('../css/global/variables.css');
-@import url('../css/global/global.css');
+@import url('./global/font.css');
+@import url('./global/global.css');
+@import url('./global/normalize.css');
+@import url('./global/variables.css');
 
 /* blocks */
 
-@import url('../css/blocks/advantages.css');
+@import url('./blocks/page.css');
+@import url('./blocks/page-header.css');
+@import url('./blocks/page-main.css');
+@import url('./blocks/advantages.css');
+@import url('./blocks/page-footer.css');
