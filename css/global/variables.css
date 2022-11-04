@@ -2,13 +2,13 @@
   --basic-white: #fff;
   --almost-white: #EEEEEE;
 
-  --skyblue-dark: #5496BD;
-  --skyblue-light: #669EC0;
-  --skyblue-lighter: #81B3D2;
+  --skyblue: #669EC0;
+  --skyblue-light: #81B3D2;
+  --skyblue-opacity: #5496BD;
 
-  --chocolate-lighter: #766357;
-  --chocolate-light: #604E43;
-  --chocolate-dark: #503E33;
+  --chocolate: #604E43;
+  --chocolate-light: #766357;
+  --chocolate-opacity: #503E33;
 
   --gray: #ABABAB;
   --gray-light: #BDBBBC;

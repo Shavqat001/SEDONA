@@ -1,13 +1,13 @@
 .page-header__navigation {
-    padding: 15px;
-    padding-left: 72px;
-    padding-right: 72px;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    background: var(--basic-white);
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
+  padding-left: 72px;
+  padding-right: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: var(--basic-white);
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
 }
