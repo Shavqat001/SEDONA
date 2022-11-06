@@ -1,6 +1,7 @@
 .page {
   padding-left: 40px;
   padding-right: 40px;
+  background: var(--gray-white);
 }
 .page__body {
   background: var(--basic-white);
