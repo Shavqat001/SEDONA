@@ -1,4 +1,3 @@
-
 .page-main__title {
   text-align: center;
   position: absolute;
@@ -7,29 +6,20 @@
   margin: 0;
 }
 
-.page-main__image {
-  margin: 0;
-  width: 100%;
-}
-
-.page-main__image-shape {
-  position: absolute;
-  z-index: 2;
-  top: 508px;
-  width: 100%;
-}
-
-.page-main__title .welcome {
+.welcome {
   color: var(--skyblue-light);
   text-transform: uppercase;
   font-family: 'Sullivan', sans-serif;
   text-shadow: 1px 1px 0 #333,
     -1px 1px 0 #333,
     1px -1px 0 #333,
-    -1px -1px 0 #333;
+    -1px -1px 0 #333,
+    0 1px 0 #333,
+    -1px 0 0 #333,
+    0 -1px 0 #333,
+    0 0 0 #333;
   font-size: 63px;
   margin: 0;
-  padding: 0;
   margin-top: 77px;
   line-height: 70px;
 }
@@ -39,13 +29,13 @@
   color: var(--chocolate-light);
   font-size: 29px;
   margin: 0;
-  margin-bottom: 53px;
   font-weight: 400;
+  display: block;
 }
 
 .gargeous::before,
 .gargeous::after {
-  content:" — ";
+  content: " — ";
 }
 
 .sedona {
@@ -53,21 +43,12 @@
   font-family: 'Zeroneo', sans-serif, 'Arial';
   color: var(--basic-white);
   display: block;
-  margin: 10px;
   text-transform: uppercase;
-  /* margin-bottom: 62px; */
-}
-
-.page-main__description {
-  text-align: center;
-  font-size: 21px;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
+  line-height: 185px;
 }
 
 .page-main__quote {
   color: #fff;
-  z-index: 1;
   font-family: 'Wisdom';
   margin: 0;
   font-size: 36px;
@@ -75,10 +56,31 @@
   line-height: 36px;
 }
 
+.page-main__image {
+  margin: 0;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 80% 95%, 80% 90%, 50% 100%, 20% 90%, 20% 95%, 0 90%);
+}
+
+.page-main__image-shape {
+  position: absolute;
+  z-index: 2;
+  top: 508px;
+  width: 100%;
+}
+
+.page-main__description {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
 .page-main__cause-description {
   text-align: center;
   font-weight: 400;
-  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   color: var(--font-color-dark);
+  line-height: 26px;
+  margin-bottom: 51px;
 }

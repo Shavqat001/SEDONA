@@ -1,4 +1,85 @@
-.advantages__items {
-    padding: 48px;
-    background-color: var(--skyblue-dark);
+.advantages__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advantages__items-header {
+    display: flex;
+    color: var(--basic-white);
+    margin-bottom: 160px;
+}
+
+.advantages__items-header-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--skyblue-light);
+    text-align: center;
+    font-weight: 400;
+    max-width: 400px;
+}
+
+.advantages__items-title {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages__items-title::after {
+    content: '—№1—';
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.advantages__items-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.advantages__list-items-title {
+    line-height: 21px;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.advantages__list-items-title::before {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 1050px;
+    margin-left: -5px;
+}
+
+.home::before {
+    background: url('../../image/home.png') 50% no-repeat;
+}
+
+.food::before {
+    background: url('../../image/burger.png') 50% no-repeat;
+    margin-left: -20px;
+}
+
+.gift::before {
+    background: url('../../image/gift.png') 50% no-repeat;
+    margin-left: 10px;
+}
+
+.advantages__list-items-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--font-color-dark);
+}
+.advantages__items-image {
+    flex-grow: 1;
 }
