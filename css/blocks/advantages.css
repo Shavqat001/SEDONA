@@ -1,89 +1,92 @@
 .advantages__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages__items-header {
-    display: flex;
-    color: var(--basic-white);
-    margin-bottom: 160px;
+  display: flex;
+  color: var(--basic-white);
+  margin-bottom: 160px;
 }
 
 .advantages__items-header-description {
-    display: flex;
-    flex-direction: column;
-    background: var(--skyblue-light);
-    text-align: center;
-    font-weight: 400;
-    max-width: 400px;
-    padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background: var(--skyblue-light);
+  text-align: center;
+  font-weight: 400;
+  max-width: 400px;
+  padding: 50px;
 }
 
 .advantages__items-title {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .advantages__items-title::after {
-    content: '—№1—';
-    margin-top: 25px;
-    font-size: 14px;
-    font-weight: 400;
+  content: '—№1—';
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .advantages__items-list {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 82px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 82px;
 }
 
 .advantages__list-items-title {
-    line-height: 21px;
-    font-size: 21px;
-    font-weight: 700;
+  line-height: 21px;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .advantages__list-items-title::before {
-    content: '';
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 1070px;
-    margin-left: -5px;
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 1070px;
+  margin-left: -5px;
 }
 
 .home::before {
-    background: url('../../image/home.png') 50% no-repeat;
+  background: url('../../image/home.png') 50% no-repeat;
 }
 
 .food::before {
-    background: url('../../image/burger.png') 50% no-repeat;
-    margin-left: -20px;
+  background: url('../../image/burger.png') 50% no-repeat;
+  margin-left: -20px;
 }
 
 .gift::before {
-    background: url('../../image/gift.png') 50% no-repeat;
-    margin-left: 10px;
+  background: url('../../image/gift.png') 50% no-repeat;
+  margin-left: 10px;
 }
+
 .advantages__items-header-second-list {
   margin: 0;
 }
+
 .advantages__list-items-description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: var(--font-color-dark);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--font-color-dark);
 }
+
 .advantages__items-image {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .advantages__list-feature {
@@ -94,11 +97,13 @@
   padding: 50px;
   margin-bottom: 58px;
 }
+
 .advantages__list-items-name {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
 }
+
 .advantages__list-items-name::after {
   margin-top: 25px;
   font-size: 14px;
@@ -106,12 +111,15 @@
   line-height: 21px;
   color: var(--font-color-dark);
 }
+
 .advantages__list-items-title--small-area::after {
-  content: '№2';
+  content: '—№2—';
 }
+
 .advantages__list-items-title--nice-road::after {
-  content: '№3';
+  content: '—№3—';
 }
+
 .advantages__list-items-title--few-tourists::after {
-  content: '№4';
+  content: '—№4—';
 }
