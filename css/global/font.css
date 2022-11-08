@@ -14,15 +14,18 @@
 
 @font-face {
   font-family: 'Wisdom';
+  font-weight: 400;
   src: url('../../fonts/wisdom.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Sullivan';
+  font-weight: 400;
   src: url('../../fonts/sullivan.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Zeronero';
+  font-weight: 400;
   src: url('../../fonts/zeronero.woff') format('woff');
 }
