@@ -92,6 +92,7 @@
   text-align: center;
   background: var(--almost-white);
   padding: 50px;
+  margin-bottom: 58px;
 }
 .advantages__list-items-name {
   display: flex;
