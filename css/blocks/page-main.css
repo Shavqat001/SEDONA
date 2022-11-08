@@ -33,6 +33,13 @@
   display: block;
 }
 
+.welcome,
+.gargeous {
+  position: relative;
+  left: 50%;
+  transform: translateX(-48%);
+}
+
 .gargeous::before,
 .gargeous::after {
   content: " — ";

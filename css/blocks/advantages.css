@@ -73,7 +73,9 @@
     background: url('../../image/gift.png') 50% no-repeat;
     margin-left: 10px;
 }
-
+.advantages__items-header-second-list {
+  margin: 0;
+}
 .advantages__list-items-description {
     font-weight: 400;
     font-size: 14px;
@@ -82,4 +84,33 @@
 }
 .advantages__items-image {
     flex-grow: 1;
+}
+
+.advantages__list-feature {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: var(--almost-white);
+  padding: 50px;
+}
+.advantages__list-items-name {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.advantages__list-items-name::after {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--font-color-dark);
+}
+.advantages__list-items-title--small-area::after {
+  content: '№2';
+}
+.advantages__list-items-title--nice-road::after {
+  content: '№3';
+}
+.advantages__list-items-title--few-tourists::after {
+  content: '№4';
 }
