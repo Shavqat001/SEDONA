@@ -11,6 +11,7 @@
 }
 
 .page__body {
+  width: 1280px;
   background: var(--basic-white);
   box-shadow: 0 0 10px var(--font-color-lighter);
   position: relative;

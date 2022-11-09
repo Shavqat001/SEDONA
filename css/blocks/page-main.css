@@ -25,7 +25,7 @@
 
 .gargeous {
   font-family: 'Wisdom';
-  color: var(--chocolate-light);
+  color: var(--chocolate);
   font-size: 29px;
   margin: 0;
   display: block;
@@ -58,7 +58,7 @@
   font-family: 'Wisdom';
   margin: 0;
   font-size: 36px;
-  text-transform: lowercase;
+  text-transform: none;
   line-height: 36px;
   font-weight: 400;
 }
@@ -89,4 +89,46 @@
   color: var(--font-color-dark);
   line-height: 26px;
   margin-bottom: 51px;
+}
+
+/****** Catalog page *******/
+.form-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__form {
+  width: 100%;
+  display: flex;
+  background: url('../../image/background-transparent.jpg') no-repeat;
+  background-size: 100%;
+  padding-top: 26px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 30px;
+  color: var(--basic-white);
+}
+
+.page-main__form-infrastructure-fieldset {
+  margin-right: 118px;
+}
+
+.page-main__form-house-type {
+  margin-right: 348px;
+}
+
+.form--fieldset__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.form-fieldset__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }
