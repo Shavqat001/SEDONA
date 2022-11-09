@@ -1,17 +1,18 @@
 :root {
   --basic-white: #fff;
+  --basic-black: #000;
   --almost-white: #EEEEEE;
 
-  --skyblue: #669EC0;
-  --skyblue-light: #81B3D2;
-  --skyblue-opacity: #5496BD;
+  --skyblue: #81B3D2;
+  --skyblue-hover: #669EC0;
+  --skyblue-press: #5496BD;
 
-  --chocolate: #604E43;
-  --chocolate-light: #766357;
-  --chocolate-opacity: #503E33;
+  --chocolate: #766357;
+  --chocolate-hover: #604E43;
+  --chocolate-press: #503E33;
 
   --gray: #ABABAB;
-  --gray-light: #BDBBBC;
+  --gray-press: #BDBBBC;
   --gray-lighter: #CACACA;
   --gray-white: #F2F2F2;
 

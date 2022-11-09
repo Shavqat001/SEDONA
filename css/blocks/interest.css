@@ -26,10 +26,19 @@
   padding-left: 124px;
   padding-right: 124px;
   color: var(--basic-white);
-  background: var(--chocolate-light);
+  background: var(--chocolate);
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+.interest__form-button:hover {
+  background-color: var(--chocolate-hover);
+}
+
+.interest__form-button:active {
+  background-color: var(--chocolate-press);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .map {
