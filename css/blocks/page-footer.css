@@ -6,10 +6,9 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  z-index: 2;
   position: absolute;
   bottom: 0;
-  left: 0;
-  z-index: 5;
 }
 
 .page-footer__address {
@@ -31,25 +30,32 @@
 
 .page-footer__list--social-networks {
   flex-direction: row;
+  color: var(--basic-white);
 }
 
 .page-footer__items:not(:last-child) {
   margin-right: 6px;
 }
 
-.page-footer__logos {
+.page-footer__items-logos {
   padding: 17px;
-  min-width: 46px;
-  min-height: 48px;
   background: var(--skyblue-light);
-  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .page-footer-htmlacademy {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .htmlacademy__title {
   margin-right: 15px;
+  font-size: 14px;
+  line-height: 26px;
 }
+
+/* .page-footer__academy-logo {
+
+} */

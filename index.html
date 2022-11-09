@@ -12,18 +12,21 @@
 
 <body class="page__body">
   <div class="visually-hidden">
-    <symbol id="twitter" viewBox="0 0 17 16" fill="none">
-      <path
-        d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479Z"
-        fill="currentColor" />
-    </symbol>
-    <symbol id="youtube" viewBox="0 0 20 16" fill="none">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3Zm3.027 4.002v7.996L15.014 8 6.027 4.002Z" fill="currentColor" />
-    </symbol>
-    <symbol id="facebook" viewBox="0 0 12 22" fill="none">
-      <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4Z" fill="currentColor" />
-    </symbol>
+    <svg>
+
+      <symbol id="twitter" viewBox="0 0 17 16" fill="none">
+        <path
+          d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479Z"
+          fill="currentColor" />
+      </symbol>
+      <symbol id="youtube" viewBox="0 0 20 16" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3Zm3.027 4.002v7.996L15.014 8 6.027 4.002Z" fill="currentColor" />
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 12 22" fill="none">
+        <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4Z" fill="currentColor" />
+      </symbol>
+    </svg>
   </div>
 
   <header class="page-header">
@@ -128,7 +131,7 @@
         вам лучшие предложения гостиниц в седоне
       </p>
       <form class="interest__form" action="https://echo.htmlacademy.ru/">
-        <a class="interest__form-button">поиск гостиницы в седоне</a><br>
+        <a class="interest__form-button">поиск гостиницы в седоне</a>
         <div class="visually-hidden">
 
           <label class="interest__form-label">дата заезда:</label>
@@ -162,18 +165,18 @@
       </ul>
 
       <ul class="page-footer__list page-footer__list--social-networks">
-        <li class="page-footer__items">
-          <svg class="page-footer__logos" width="17" height="17">
+        <li class="page-footer__items page-footer__items-logos">
+          <svg width="17" height="17">
             <use xlink:href="#twitter"></use>
           </svg>
         </li>
-        <li class="page-footer__items">
-          <svg class="page-footer__logos" width="12" height="22">
+        <li class="page-footer__items page-footer__items-logos">
+          <svg width="12" height="22">
             <use xlink:href="#facebook"></use>
           </svg>
         </li>
-        <li class="page-footer__items">
-          <svg class="page-footer__logos" width="20" height="16">
+        <li class="page-footer__items page-footer__items-logos">
+          <svg width="20" height="16">
             <use xlink:href="#youtube"></use>
           </svg>
         </li>
@@ -182,7 +185,9 @@
       <div class="page-footer-htmlacademy">
         <p class="htmlacademy__title">Website by</p>
         <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="page-footer__academy-logo" src="https://via.placeholder.com/115x33" alt="html academy logo">
+          <img class="page-footer__academy-logo" 
+          src="./image/html-academy.png" width="115" height="33"
+          alt="html academy logo">
         </a>
       </div>
     </address>

@@ -8,7 +8,6 @@
 
 .welcome {
   color: var(--skyblue-light);
-  text-transform: uppercase;
   font-family: 'Sullivan', sans-serif;
   text-shadow: 1px 1px 0 #333,
     -1px 1px 0 #333,
@@ -29,8 +28,9 @@
   color: var(--chocolate-light);
   font-size: 29px;
   margin: 0;
-  font-weight: 400;
   display: block;
+  text-transform: lowercase;
+  font-weight: 400;
 }
 
 .welcome,
@@ -50,17 +50,17 @@
   font-family: 'Zeroneo', sans-serif, 'Arial';
   color: var(--basic-white);
   display: block;
-  text-transform: uppercase;
   line-height: 185px;
 }
 
 .page-main__quote {
-  color: #fff;
+  color: var(--basic-white);
   font-family: 'Wisdom';
   margin: 0;
   font-size: 36px;
-  font-weight: 400;
+  text-transform: lowercase;
   line-height: 36px;
+  font-weight: 400;
 }
 
 .page-main__image {
@@ -85,7 +85,6 @@
 
 .page-main__cause-description {
   text-align: center;
-  font-weight: 400;
   font-size: 14px;
   color: var(--font-color-dark);
   line-height: 26px;

@@ -1,20 +1,19 @@
 .page {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
   padding-left: 40px;
   padding-right: 40px;
-  background: var(--gray-white);
   font-family: 'PT Sans', sans-serif;
-  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  background: var(--gray-white);
 }
 
 .page__body {
   background: var(--basic-white);
   box-shadow: 0 0 10px var(--font-color-lighter);
   position: relative;
-  margin: 0 auto;
-  height: 2762px;
-  padding: 0;
+  height: 2740px;
+  font-weight: 400;
 }

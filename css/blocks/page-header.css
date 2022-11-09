@@ -1,23 +1,19 @@
 .page-header {
-    text-align: center;
     padding: 15px;
     padding-left: 72px;
     padding-right: 72px;
-    text-transform: uppercase;
-    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
-}
-.navigation__list {
-    width: 100%;
+  }
+  .navigation__list {
     display: flex;
     justify-content: space-between;
     margin:0;
     padding: 0;
     list-style: none;
     line-height: 26px;
-}
-.navigation__main-logo {
+  }
+  .navigation__main-logo {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -25,7 +21,7 @@
     top: 0;
     transform: translateX(-50%);
     z-index: 1;
-}
-.photo--item {
+  }
+  .photo--item {
     margin-right: 150px;
 }
