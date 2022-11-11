@@ -5,8 +5,8 @@
   padding-right: 40px;
   background: var(--gray-white);
   font-family: 'PT Sans', sans-serif;
-  text-transform: uppercase;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .page__body {

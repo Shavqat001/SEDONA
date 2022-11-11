@@ -90,6 +90,7 @@
 }
 
 /****** Catalog page *******/
+
 .form-fieldset {
   margin: 0;
   padding: 0;
@@ -100,22 +101,16 @@
 
 .page-main__form {
   width: 100%;
-  display: flex;
   background: url('../../image/background-transparent.jpg') no-repeat;
   background-size: 100%;
-  padding-top: 26px;
-  padding-left: 72px;
-  padding-right: 72px;
-  padding-bottom: 30px;
   color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 137px 137px 317px;
+  padding: 26px 73px 32px 72px;
 }
 
-.page-main__form-infrastructure-fieldset {
-  margin-right: 118px;
-}
-
-.page-main__form-house-type {
-  margin-right: 348px;
+.page-main__form-price {
+  grid-column: 4/5;
 }
 
 .form--fieldset__title {
@@ -129,4 +124,37 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+.form-price-show-button {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 7px 35px;
+  max-width: 150px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.hotels__first-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.first-items-article {
+  display: grid;
+  grid-template-columns: 135px 258px 113px;
+}
+.left-side {
+  display: flex;
+}
+.list-star {
+  width: 19px;
+  height: 17px;
+  background-color: var(--skyblue);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
