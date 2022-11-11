@@ -1,27 +1,44 @@
 .page-header {
-    padding: 15px;
-    padding-left: 72px;
-    padding-right: 72px;
-    font-weight: 700;
-    font-size: 14px;
-  }
-  .navigation__list {
-    display: flex;
-    justify-content: space-between;
-    margin:0;
-    padding: 0;
-    list-style: none;
-    line-height: 26px;
-  }
-  .navigation__main-logo {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    left: 52%;
-    top: 0;
-    transform: translateX(-50%);
-    z-index: 1;
-  }
-  .photo--item {
-    margin-right: 150px;
+  padding: 15px;
+  padding-left: 72px;
+  padding-right: 72px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 26px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-areas: "a b c d";
+  text-align: center;
+}
+
+.navigation__links--information {
+  grid-area: a;
+}
+
+.navigation__links--photo-and-video {
+  grid-area: b;
+}
+
+.navigation__links--state-card {
+  grid-area: c;
+}
+
+.navigation__links--hotel {
+  grid-area: d;
+}
+
+.navigation__main-logo {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 52%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 1;
 }
