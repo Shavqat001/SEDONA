@@ -27,6 +27,10 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  margin-bottom: 23px;
+}
+.advantages__items-description {
+  margin: 0;
 }
 
 .advantages__items-title::after {
@@ -35,7 +39,9 @@
   font-size: 14px;
   font-weight: 400;
 }
-
+.advantages__items-title--devil-bridge::after {
+  content: '—№2—';
+}
 .advantages__items-list {
   display: flex;
   justify-content: space-around;
@@ -113,13 +119,13 @@
 }
 
 .advantages__list-items-title--small-area::after {
-  content: '—№2—';
-}
-
-.advantages__list-items-title--nice-road::after {
   content: '—№3—';
 }
 
-.advantages__list-items-title--few-tourists::after {
+.advantages__list-items-title--nice-road::after {
   content: '—№4—';
+}
+
+.advantages__list-items-title--few-tourists::after {
+  content: '—№5—';
 }
