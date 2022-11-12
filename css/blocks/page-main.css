@@ -1,16 +1,13 @@
 .page-main__title {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: absolute;
   text-align: center;
-  width: 100%;
   z-index: 1;
   margin: 0;
-  /* margin-left: 22px; */
+  margin-left: 357px;
+  margin-right: auto;
 }
-
 .welcome {
   color: var(--skyblue);
   font-family: 'Sullivan', sans-serif;
@@ -63,7 +60,7 @@
 
 .page-main__image {
   margin: 0;
-  width: 100%;
+  margin-bottom: 42px;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 80% 95%, 80% 90%, 50% 100%, 20% 90%, 20% 95%, 0 90%);
 }
 
@@ -78,6 +75,8 @@
   text-align: center;
   font-size: 21px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 32px;
   line-height: 26px;
 }
 
@@ -86,6 +85,7 @@
   font-size: 14px;
   color: var(--font-color-dark);
   line-height: 26px;
+  margin: 0;
   margin-bottom: 51px;
 }
 
@@ -149,9 +149,11 @@
   display: grid;
   grid-template-columns: 135px 258px 113px;
 }
+
 .left-side {
   display: flex;
 }
+
 .list-star {
   width: 19px;
   height: 17px;
