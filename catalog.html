@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="page__body" style="height:933px;">
+<body class="page__body">
   <div class="visually-hidden">
     <svg>
       <symbol id="twitter" viewBox="0 0 17 16" fill="none">
@@ -21,7 +21,8 @@
 
       <symbol id="youtube" viewBox="0 0 20 16" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3Zm3.027 4.002v7.996L15.014 8 6.027 4.002Z" fill="currentColor" />
+          d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3Zm3.027 4.002v7.996L15.014 8 6.027 4.002Z"
+          fill="currentColor" />
       </symbol>
 
       <symbol id="facebook" viewBox="0 0 12 22" fill="none">
@@ -39,13 +40,28 @@
           </clipPath>
         </defs>
       </symbol>
+
+      <symbol id="down" viewBox="0 0 11 10" fill="none">
+        <path fill="currentColor" d="M5.5 10 0 0h11" />
+      </symbol>
+
+      <symbol id="up" viewBox="0 0 11 10" fill="none">
+        <path fill="currentColor" d="M5.5 0 0 10h11L5.5 0Z" />
+      </symbol>
+
+      <symbol id="star" viewBox="0 0 19 17" fill="none">
+        <path fill="currentColor"
+          d="m9.002 0 2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0Z" />
+      </symbol>
+
     </svg>
   </div>
 
   <header class="page-header">
     <nav class="page-header__navigation">
       <a class="navigation__main-logo" href="./index.html">
-        <img class="page-header__logo" width="138" height="70" src="./image/main-logo.svg" width="138" height="70" alt="Логотип горы Седора">
+        <img class="page-header__logo" width="138" height="70" src="./image/main-logo.svg" width="138" height="70"
+          alt="Логотип горы Седора">
       </a>
 
       <ul class="navigation__list">
@@ -67,6 +83,7 @@
       </ul>
     </nav>
   </header>
+
 
   <main class="page-main">
     <h1 class="visually-hidden">найти гостиницу</h1>
@@ -121,117 +138,144 @@
     </form>
 
     <section class="hotels">
-      <h2 class="visually-hidden">Товары</h2>
-      <ul class="hotels__list">
-        <li class="hotels__found">Найдено: 3</li>
-        <li class="hotels__sort">Сортировка:</li>
-        <li class="hotels__item"><a href="">По цене</a></li>
-        <li class="hotels__item"><a href="">По типу</a></li>
-        <li class="hotels__item"><a href="">По рейтингу</a></li>
-      </ul>
+      <article class="hotels__article hotels__article--product">
+        <h2 class="visually-hidden">Товары</h2>
+        <ul class="hotels__list">
+          <li class="hotels__item hotels__item--found">Найдено: 3</li>
+          <li class="hotels__item hotels__item--sort">Сортировка:</li>
+          <li class="hotels__item hotels__item--by-price"><a href="">По цене</a></li>
+          <li class="hotels__item hotels__item--by-type"><a href="">По типу</a></li>
+          <li class="hotels__item hotels__item--by-rating"><a href="">По рейтингу</a></li>
+        </ul>
+        <div class="up-down-signs">
+          <svg class="item-up" width="10" height="11">
+            <use xlink:href="#up"></use>
+          </svg>
+          <svg class="item-down" width="10" height="11">
+            <use xlink:href="#down"></use>
+          </svg>
+        </div>
+      </article>
 
-      <ul class="hotels__first-list">
-        <li class="hotels__first-items">
-          <article class="first-items-article">
-            <div class="left-side">
-              <h2 class="article-title">Amara Resort & Spa</h2>
-              <img class="article__image" src="https://via.placeholder.com/135x90" alt="">
-              <p>гостиница</p>
-              <button>подробнее</button>
-              <p>от 4000 ₽</p>
-              <button>забронировать</button>
-            </div>
+      <article class="hotels__article hotels__article--hostel">
+        <div class="hotels__article-left-side">
+          <img class="hotels__article-left-side-image" width="135" height="90" src="./image/photo-01.jpg" alt="">
+          <h2 class="hotels__article-left-side-title">Amara Resort & Spa</h2>
+          <p class="hotels__article-left-side-place-type">гостиница</p>
+          <p class="hotels__article-left-side-price">от 4000 ₽</p>
+          <button class="hotels__article-button hotels__article-button--more">подробнее</button>
+          <button class="hotels__article-button hotels__article-button--booking">забронировать</button>
+        </div>
 
-            <div class="hotels__first-stars">
-              <span class="list-star"></span>
-              <span class="list-star"></span>
-              <span class="list-star"></span>
-              <span class="list-star"></span>
-              <p>Рейтинг: 8,5</p>
-            </div>
-          </article>
-        </li>
+        <div class="hotels__article-right-side">
+          <div class="hotels__article-right-side-stars">
+            <svg width="19" height="17">
+              <use xlink:href="#star"></use>
+            </svg>
+            <svg width="19" height="17">
+              <use xlink:href="#star"></use>
+            </svg>
+            <svg width="19" height="17">
+              <use xlink:href="#star"></use>
+            </svg>
+            <svg width="19" height="17">
+              <use xlink:href="#star"></use>
+            </svg>
+          </div>
+          <p class="hotels__article-right-side-rating">Рейтинг: 8,5</p>
+        </div>
+      </article>
 
-        <li class="hotels__first-items">
-          <article class="first-items-article">
-            <div class="left-side">
-              <h2>Desert Quail Inn</h2>
-              <img class="article__image" src="https://via.placeholder.com/135x90" alt="">
-              <p>Мотель</p>
-              <button>подробнее</button>
-              <p>От 3000 ₽</p>
-              <button>забронировать</button>
+      <article class="hotels__article hotels__article--motel">
+        <div class="hotels__article-left-side">
+          <img class="hotels__article-left-side-image" width="135" height="90" src="./image/photo-02.jpg" alt="">
+          <h2 class="hotels__article-left-side-title">Desert Quail Inn</h2>
+          <p class="hotels__article-left-side-place-type">Мотель</p>
+          <p class="hotels__article-left-side-price">От 3000 ₽</p>
+          <button class="hotels__article-button hotels__article-button--more">подробнее</button>
+          <button class="hotels__article-button hotels__article-button--booking">забронировать</button>
+        </div>
 
-            </div>
-            <div class="hotels__first-stars">
-              <span class="list-star"></span>
-              <span class="list-star"></span>
-              <span class="list-star"></span>
-              <p>Рейтинг: 8,9</p>
-            </div>
-          </article>
-        </li>
+        <div class="hotels__article-right-side">
+          <div class="hotels__article-right-side-stars">
 
-        <li class="hotels__first-items">
-          <article class="first-items-article">
-            <div class="left-side">
-              <h2>Villas at Poco Diablo</h2>
-              <img class="article__image" src="https://via.placeholder.com/135x90" alt="">
-              <p>Апартаменты</p>
-              <button>подробнее</button>
-              <p>От 2000 ₽</p>
-              <button>забронировать</button>
-            </div>
+            <svg width="19" height="17">
+              <use xlink:href="#star"></use>
+            </svg>
+            <svg width="19" height="17">
+              <use xlink:href="#star"></use>
+            </svg>
+            <svg width="19" height="17">
+              <use xlink:href="#star"></use>
+            </svg>
+          </div>
+          <p class="hotels__article-right-side-rating">Рейтинг: 8,9</p>
+        </div>
+      </article>
 
-            <div class="hotels__first-stars">
-              <span class="list-star"></span>
-              <span class="list-star"></span>
-              <p>Рейтинг: 9,2</p>
-            </div>
-          </article>
-        </li>
-      </ul>
+      <article class="hotels__article hotels__article--apartment">
+        <div class="hotels__article-left-side">
+          <img class="hotels__article-left-side-image" width="135" height="90" src="./image/photo-03.jpg" alt="">
+          <h2 class="hotels__article-left-side-title">Villas at Poco Diablo</h2>
+          <p class="hotels__article-left-side-place-type">Апартаменты</p>
+          <p class="hotels__article-left-side-price">От 2000 ₽</p>
+          <button class="hotels__article-button hotels__article-button--more">подробнее</button>
+          <button class="hotels__article-button hotels__article-button--booking">забронировать</button>
+        </div>
+
+        <div class="hotels__article-right-side">
+          <div class="hotels__article-right-side-stars">
+
+            <svg width="19" height="17">
+              <use xlink:href="#star"></use>
+            </svg>
+            <svg width="19" height="17">
+              <use xlink:href="#star"></use>
+            </svg>
+          </div>
+          <p class="hotels__article-right-side-rating">Рейтинг: 9,2</p>
+        </div>
+      </article>
     </section>
   </main>
 
+
   <footer class="page-footer">
-    <address class="page-footer__address">
-      <ul class="page-footer__list">
-        <li class="page-footer__items">
-          <a href="">#visitSEDONA</a>
-        </li>
-        <li class="page-footer__items">
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
-        </li>
-      </ul>
+    <ul class="page-footer__list">
+      <li class="page-footer__items">
+        <a href="">#visitSEDONA</a>
+      </li>
+      <li class="page-footer__items">
+        <a href="tel:+78005558628">+7 800 555-86-28</a>
+      </li>
+    </ul>
 
-      <ul class="page-footer__list page-footer__list--social-networks">
-        <li class="page-footer__items page-footer__items-logos">
-          <svg width="17" height="17">
-            <use xlink:href="#twitter"></use>
-          </svg>
-        </li>
-        <li class="page-footer__items page-footer__items-logos facebook">
-          <svg width="12" height="22">
-            <use xlink:href="#facebook"></use>
-          </svg>
-        </li>
-        <li class="page-footer__items page-footer__items-logos">
-          <svg width="20" height="16">
-            <use xlink:href="#youtube"></use>
-          </svg>
-        </li>
-      </ul>
+    <ul class="page-footer__list page-footer__list--social-networks">
+      <li class="page-footer__items page-footer__items-logos">
+        <svg width="17" height="17">
+          <use xlink:href="#twitter"></use>
+        </svg>
+      </li>
+      <li class="page-footer__items page-footer__items-logos facebook">
+        <svg width="12" height="22">
+          <use xlink:href="#facebook"></use>
+        </svg>
+      </li>
+      <li class="page-footer__items page-footer__items-logos">
+        <svg width="20" height="16">
+          <use xlink:href="#youtube"></use>
+        </svg>
+      </li>
+    </ul>
 
-      <div class="page-footer-htmlacademy">
-        <p class="htmlacademy__title">Website by</p>
-        <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <svg class="html-academy-logo" width="115" height="33">
-            <use xlink:href="#htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
-    </address>
+    <div class="page-footer-htmlacademy">
+      <p class="htmlacademy__title">Website by</p>
+      <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <svg class="html-academy-logo" width="115" height="33">
+          <use xlink:href="#htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
   </footer>
 </body>
 
