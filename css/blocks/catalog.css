@@ -1,0 +1,46 @@
+.form-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__form {
+  width: 100%;
+  background: url('../../image/background-transparent.jpg') no-repeat;
+  background-size: 100%;
+  color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 137px 137px 317px;
+  padding: 26px 73px 32px 72px;
+}
+
+.page-main__form-price {
+  grid-column: 4/5;
+}
+
+.form--fieldset__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.form-fieldset__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.form-price-show-button {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 7px 35px;
+  max-width: 150px;
+  text-align: center;
+  line-height: 21px;
+}
+
