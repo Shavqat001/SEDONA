@@ -1,52 +1,52 @@
-.form-fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
-  display: flex;
-  flex-direction: column;
-}
-
 .page-main__form {
+  display: flex;
+  padding: 26px 72px 32px 72px;
   width: 100%;
   background: url('../../image/background-transparent.jpg') no-repeat;
   background-size: 100%;
   color: var(--basic-white);
-  display: grid;
-  grid-template-columns: 137px 137px 317px;
-  padding: 26px 73px 32px 72px;
 }
 
-.page-main__form-price {
-  grid-column: 4/5;
+.form-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
-.form--fieldset__title {
-  font-weight: 700;
+.page-main__form-infrastructure {
+  margin-right: 118px;
+}
+
+.form-fieldset__title {
   font-size: 16px;
+  font-weight: 700;
   line-height: 21px;
-  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
-.form-fieldset__subtitle {
-  font-weight: 400;
+.form-fieldset__title-description {
   font-size: 14px;
+  font-weight: 400;
   line-height: 21px;
+  margin: 0;
+
 }
 
-.form-price-show-button {
-  background: transparent;
-  border: 2px solid #fff;
-  border-radius: 2px;
-  text-transform: uppercase;
-  padding: 7px 35px;
-  max-width: 150px;
-  text-align: center;
-  line-height: 21px;
+.form-fieldset__title-description:not(:last-child) {
+  margin-bottom: 25px;
 }
 
-.form-price-show-button:hover {
-  background-color: #fff;
-  color: #000;
+.page-main__form-house-type {
+  margin-right: 347px;
+}
+
+.cost-per-day {
+  margin-bottom: 10px;
+}
+
+.form-price {
+  margin: 0;
 }
 
 .hotels__article {
