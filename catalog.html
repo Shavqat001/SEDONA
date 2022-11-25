@@ -54,6 +54,19 @@
           d="m9.002 0 2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0Z" />
       </symbol>
 
+      <symbol id="checkbox-off" viewBox="0 0 23 23" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z"
+          fill="currentColor" />
+      </symbol>
+
+      <symbol id="checkbox-on" viewBox="0 0 27 23" fill="none">
+        <path d="M7.285 7.48601L4.456 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.285 7.48601Z"
+          fill="currentColor" />
+        <path
+          d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
+          fill="currentColor" />
+      </symbol>
     </svg>
   </div>
 
@@ -86,47 +99,49 @@
 
 
   <main class="page-main">
-    <h1 class="visually-hidden">найти гостиницу</h1>
+    <h1 class="visually-hidden">Фильтр товаров</h1>
 
-    <form class="page-main__form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="form-fieldset page-main__form-infrastructure">
-        <legend class="form-fieldset__title page-main__form-infrastructure-title">Инфраструктура:</legend>
-        <div class="form-fieldset__title-description">
-          <span class="form-fieldset__checkbox"></span>
-          <label class="form-fieldset__subtitle form--pool-subtitle">бассейн</label>
-        </div>
-
-        <div class="form-fieldset__title-description">
-          <span class="form-fieldset__checkbox"></span>
-          <label class="form-fieldset__subtitle form--parking-subtitle">парковка</label>
-        </div>
-
-        <div class="form-fieldset__title-description">
-          <span class="form-fieldset__checkbox"></span>
-          <label class="form-fieldset__subtitle form--wifi-subtitle">wi-fi</label>
-        </div>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <ul class="filter-list">
+          <li class="filter-option">
+            <input class="visually-hidden filter-input-checkbox" id="filter-pool" type="checkbox" checked>
+            <label class="filter-pool" for="filter-pool">бассейн</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input-checkbox" id="filter-parking" type="checkbox">
+            <label class="filter-parking" for="filter-parking">парковка</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input-checkbox" id="filter-wi-fi" type="checkbox">
+            <label class="filter-wifi" for="filter-wi-fi">wi-fi</label>
+          </li>
+        </ul>
       </fieldset>
 
-      <fieldset class="form-fieldset page-main__form-house-type">
-        <legend class="form-fieldset__title">тип жилья:</legend>
-        <div class="form-fieldset__title-description">
-          <span class="form-fieldset__checkbox"></span>
-          <label class="form-fieldset__subtitle">гостиница</label>
-        </div>
+      <fieldset>
+        <legend>тип жилья:</legend>
+        <ul class="filter-list">
+          <li class="filter-option">
+            <input class="visually-hidden filter-input-checkbox" id="filter-hotel" type="checkbox" checked>
+            <label class="form-fieldset__subtitle" for="filter-hotel">гостиница</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input-checkbox" id="filter-motel" type="checkbox" checked>
+            <label class="form-fieldset__subtitle" for="filter-motel">мотель</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input-checkbox" id="filter-apartment" type="checkbox" checked>
+            <label class="form-fieldset__subtitle" for="filter-apartment">апартаменты</label>
+          </li>
+        </ul>
 
-        <div class="form-fieldset__title-description">
-          <span class="form-fieldset__checkbox"></span>
-          <label class="form-fieldset__subtitle">мотель</label>
-        </div>
 
-        <div class="form-fieldset__title-description">
-          <span class="form-fieldset__checkbox"></span>
-          <label class="form-fieldset__subtitle">апартаменты</label>
-        </div>
       </fieldset>
 
-      <fieldset class="form-fieldset page-main__form-price">
-        <legend class="form-fieldset__title cost-per-day">Стоимость в сутки, ₽:</legend>
+      <fieldset>
+        <legend>Стоимость в сутки, ₽:</legend>
         <p class="form-price">
           <label>От <input class="form-price__input form-price--from" type="text" value="0"></label>
           <label>До <input class="form-price__input form-price--to" type="text" value="3000"></label>
