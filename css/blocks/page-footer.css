@@ -7,8 +7,8 @@
   justify-content: space-around;
   align-items: center;
   z-index: 2;
-  /* position: absolute; */
-  /* bottom: 0; */
+  position: absolute;
+  bottom: 0;
 }
 
 .page-footer__address {
@@ -40,15 +40,12 @@
 }
 
 .page-footer__items-logos {
-  padding: 17px;
   background: var(--skyblue);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.facebook {
-  min-width: 52px;
+  width: 46px;
+  height: 48px;
 }
 
 .page-footer__items-logos:hover {

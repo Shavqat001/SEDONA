@@ -1,8 +1,6 @@
 .page {
   display: flex;
   justify-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
   background: var(--gray-white);
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
@@ -10,9 +8,12 @@
 }
 
 .page__body {
+  width: 1280px;
+  max-width: 1280px;
   background: var(--basic-white);
-  box-shadow: 0 0 10px var(--font-color-lighter);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  position: absolute;
 }
