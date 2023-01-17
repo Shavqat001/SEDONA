@@ -45,7 +45,8 @@
 
 .sedona {
   font-size: 116px;
-  font-family: 'Zeroneo', sans-serif, 'Arial';
+  font-family: 'Zeroneo', sans-serif;
+  font-weight: 700;
   color: var(--basic-white);
   display: block;
   line-height: 185px;

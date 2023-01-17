@@ -25,7 +25,7 @@
 }
 
 @font-face {
-  font-family: 'Zeronero';
+  font-family: 'Zeronero', sans-serif;
   font-weight: 400;
   src: url('../../fonts/zeronero.woff') format('woff');
 }

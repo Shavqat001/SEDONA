@@ -1,5 +1,8 @@
 .interest {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .interest__title {
@@ -17,8 +20,28 @@
 }
 
 .interest__form {
-  margin-top: 24px;
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 55px;
+  width: 568px;
+  max-width: 568px;
+  height: 395px;
+  max-height: 395px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 272px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+
+}
+
+.interest__form span {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.interest__form span label {
+  margin-right: 30px;
 }
 
 .interest__button {
@@ -30,13 +53,15 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  cursor: pointer;
+  width: 568px;
 }
 
-.interest__form-button:hover {
+.interest__button:hover {
   background-color: var(--chocolate-hover);
 }
 
-.interest__form-button:active {
+.interest__button:active {
   background-color: var(--chocolate-press);
   color: rgba(255, 255, 255, 0.5);
 }
