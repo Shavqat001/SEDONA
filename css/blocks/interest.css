@@ -60,7 +60,6 @@
   font-weight: 700;
   line-height: 26px;
   text-align: left;
-
 }
 
 .interest__form span input {
@@ -69,6 +68,15 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.interest__form span input:focus {
+  background: #FFFFFF;
+  border: 2px solid #E5E5E5;
+}
+
+.interest__form span input:hover {
+  background: #EBEBEB;
 }
 
 .interest__form span {
@@ -81,9 +89,9 @@
   height: 23px;
   position: absolute;
   right: 65px;
-  z-index: -1;
   background: url('../../image/calendar.svg');
 }
+
 
 .interest__age,
 .interest__form-date {
@@ -101,6 +109,23 @@
   padding: 0;
 }
 
+.interest__age .interest__input::before {
+  content: '';
+  width: 12px;
+  height: 3px;
+  position: absolute;
+  background: url('../../image/minus.svg');
+  left: 10px;
+}
+
+.interest__age .interest__input::after {
+  content: '';
+  width: 12px;
+  height: 3px;
+  position: absolute;
+  background: url('../../image/plus.svg');
+  right: 10px;
+}
 
 .interest__age input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -141,6 +166,15 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.interest__search-button:hover {
+  background-color: var(--skyblue-hover);
+}
+
+.interest__search-button:active {
+  background-color: var(--skyblue-press);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .interest__map {
