@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona</title>
-  <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon-152.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -148,7 +148,7 @@
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__links navigation__links--hotel" href="./catalog.html">гостиницы</a>
+          <a class="navigation__links navigation__links--hotel" href="./catalog.html" style="color: inherit;">гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -258,7 +258,7 @@
 
       <a class="interest__button search-hotels">поиск гостиницы в седоне</a>
 
-      <form class="interest__form visually-hidden" action="https://echo.htmlacademy.ru/">
+      <form class="interest__form visually-hidden" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
         <span class="interest__form-date interest__form--arrival">
           <label class="interest__label">дата заезда:</label>
           <input class="interest__input" type="date" name="" id="" value="2017-04-24"><br>
@@ -298,17 +298,20 @@
 
     <ul class="page-footer__list page-footer__list--social-networks">
       <li class="page-footer__items page-footer__items-logos">
-        <svg width="17" height="17">
+        <span class="visually-hidden">Вконтаке</span>
+        <svg role="img" aria-label="Логотип Вконтакте" aria-hidden="true" focusable="false" width="17" height="17">
           <use xlink:href="#twitter"></use>
         </svg>
       </li>
       <li class="page-footer__items page-footer__items-logos">
-        <svg width="12" height="22">
+        <span class="visually-hidden">Фейсбук</span>
+        <svg role="img" aria-label="Логотип Фейсбука" aria-hidden="true" focusable="false" width="12" height="22">
           <use xlink:href="#facebook"></use>
         </svg>
       </li>
       <li class="page-footer__items page-footer__items-logos">
-        <svg width="20" height="16">
+        <span class="visually-hidden">Ютуб</span>
+        <svg role="img" aria-label="Логотип Ютуба" aria-hidden="true" focusable="false" width="20" height="16">
           <use xlink:href="#youtube"></use>
         </svg>
       </li>

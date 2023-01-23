@@ -1,3 +1,7 @@
+.navigation__links--hotel {
+  color: var(--chocolate);
+}
+
 .filter {
   display: flex;
   padding: 26px 72px 32px 72px;
