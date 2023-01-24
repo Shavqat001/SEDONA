@@ -145,6 +145,8 @@
   line-height: 26px;
   cursor: pointer;
   width: 568px;
+  border: none;
+  text-transform: uppercase;
 }
 
 .interest__button:hover {
@@ -180,4 +182,6 @@
   width: 100%;
   height: 454px;
   z-index: 1;
+  background: url('../../image/map.png');
+  background-size: 100%;
 }
